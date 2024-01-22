@@ -7,14 +7,21 @@
     <title>Jogo do Mário</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.dom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>
+    
 </head>
 <body>
-    <!-- tutorial do jogo: https://www.youtube.com/watch?v=r9buAwVBDhA -->
+
+
     <div class="game-board">
         <img src="./imagens/clouds.png" class="clouds">
         <img src="./imagens/mario.gif" class="mario" >
         <img src="./imagens/pipe.png" class="pipe">
+        <div id="scores" class="pontos">Pontos: 0</div>
     </div>
+    <div id="divwebcam" class="video"></div>
     
 </body>
 </html>
